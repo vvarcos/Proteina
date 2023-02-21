@@ -5,7 +5,9 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/home.html', {
+        'name':'Marcos Vinícius',
+    })
 
 
 def contato(request):
